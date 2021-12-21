@@ -13,17 +13,6 @@ export class Phonebook extends Component {
     number: "",
     filter: "",
   };
-  saveLocalStorageContacts = () => {
-    localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
-  };
-
-  componentDidMount() {
-    let localStorageContacts = localStorage.getItem("contacts");
-    this.setState({ contacts: JSON.parse(localStorageContacts) });
-  }
-  componentDidUpdate() {
-    this.saveLocalStorageContacts();
-  }
 
   contactExist = (i) => {
     return this.state.contacts.some(({ name }) => name === i);
@@ -60,6 +49,17 @@ export class Phonebook extends Component {
       return { contacts: contacts.filter(({ id }) => id !== index) };
     });
   };
+  saveLocalStorageContacts = () => {
+    localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
+  };
+
+  componentDidMount() {
+    let localStorageContacts = localStorage.getItem("contacts");
+    this.setState({ contacts: JSON.parse(localStorageContacts) });
+  }
+  componentDidUpdate() {
+    this.saveLocalStorageContacts();
+  }
 
   render() {
     const { contacts, filter } = this.state;
