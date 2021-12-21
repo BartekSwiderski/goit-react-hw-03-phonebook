@@ -1,0 +1,126 @@
+.app {
+  margin: auto;
+  background-color: bisque;
+  max-width: 700px;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 4px 5px 20px darkslategray;
+}
+.title {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: darkslategray;
+}
+.subtitle {
+  margin-top: 60px;
+  font-size: 29px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: darkslategray;
+}
+.formInput:focus {
+  outline: none;
+}
+.form {
+  margin: 30px 0;
+}
+.formItem {
+  margin-bottom: 10px;
+}
+.formItem:nth-child(2) {
+  margin-bottom: 10px;
+}
+.formLabel {
+  font-size: 20px;
+  color: gray;
+  margin-right: 10px 10px 0 0;
+  display: block;
+}
+.formInput {
+  height: 30px;
+  width: 300px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid goldenrod;
+  color: darkslategray;
+}
+.formButton {
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: darkslategray;
+  cursor: pointer;
+  margin: 0;
+}
+.formButton:hover {
+  box-shadow: 2px 3px 10px gray;
+}
+.contactList {
+  margin-bottom: 50px;
+}
+.contactItem {
+  padding: 0 80px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.contactDel {
+  width: 60px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(165, 42, 42, 0.527);
+  cursor: pointer;
+  margin: 0;
+}
+.contactDel:hover {
+  box-shadow: 1px 2px 4px darkslategray;
+}
+.contactName {
+  font-size: 20px;
+  font-weight: 600;
+  color: darkslategray;
+}
+.contactNumber {
+  font-size: 18px;
+  color: gray;
+}
+.contactEmpty {
+  margin-top: 70px;
+  font-size: 23px;
+  color: rgb(61, 9, 9);
+}
+.filter {
+  margin: 30px 0;
+}
+.filterInput {
+  height: 30px;
+  width: 300px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid goldenrod;
+  color: darkslategray;
+}
+.filterInput:focus {
+  outline: none;
+}
+.filterLabel {
+  font-size: 20px;
+  color: gray;
+  margin-right: 10px 10px 0 0;
+  display: block;
+}
