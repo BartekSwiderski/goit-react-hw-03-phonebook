@@ -49,9 +49,9 @@ export class Phonebook extends Component {
       return { contacts: contacts.filter(({ id }) => id !== index) };
     });
   };
-  saveLocalStorageContacts = () => {
+  /* saveLocalStorageContacts = () => {
     localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
-  };
+  }; */
 
   componentDidMount() {
     let localStorageContacts = localStorage.getItem("contacts");
