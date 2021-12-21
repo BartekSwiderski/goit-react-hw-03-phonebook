@@ -60,7 +60,9 @@ export class Phonebook extends Component {
 
   componentDidMount() {
     let localStorageContacts = JSON.parse(localStorage.getItem("contacts"));
-    this.setState({ contacts: [...localStorageContacts] });
+    localStorageContacts === []
+      ? this.setState({ contacts: [...localStorageContacts] })
+      : this.saveLocalStorageContacts();
   }
   componentDidUpdate() {
     this.saveLocalStorageContacts();
