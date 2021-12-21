@@ -49,14 +49,14 @@ export class Phonebook extends Component {
       return { contacts: contacts.filter(({ id }) => id !== index) };
     });
   };
-  /* saveLocalStorageContacts = () => {
+  saveLocalStorageContacts = () => {
     localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
-  }; */
+  };
 
-  componentDidMount() {
+  /*   componentDidMount() {
     let localStorageContacts = localStorage.getItem("contacts");
     this.setState({ contacts: JSON.parse(localStorageContacts) });
-  }
+  } */
   componentDidUpdate() {
     this.saveLocalStorageContacts();
   }
